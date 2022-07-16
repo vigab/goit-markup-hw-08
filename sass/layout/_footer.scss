@@ -101,8 +101,13 @@
     color: #ffffff;
     }
 
+    &__form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     &__input {
-    display: block;
     width: 358px;
     margin: 0;
     padding: 13px 16px;
@@ -118,5 +123,49 @@
             color: rgba(255, 255, 255, 0.6);
             letter-spacing: 0.03em;
         }
+    }
+}
+
+@media(min-width: 768px) {
+    .test {
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+    .footer__right-side {
+        margin-left: auto;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .footer {
+    
+    &__container {
+    display: flex;
+    align-items: baseline;
+    }
+
+    &__left-side {
+    margin-right: 70px;
+    }
+    }
+
+    .newsletter {
+        
+
+        &__form {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__text {
+            display: flex;
+        }
+    }
+
+    .button__newsletter {
+        margin-top: 0;
     }
 }

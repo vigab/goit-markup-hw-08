@@ -158,6 +158,7 @@ ul {
   margin-left: 12px;
   width: 200px;
   height: 50px;
+  margin-top: 15px;
 }
 .button__newsletter:focus, .button__newsletter:hover {
   background-color: rgba(33, 150, 243, 0.8);
@@ -312,6 +313,7 @@ ul {
   }
 }
 .mobile-menu {
+  padding-left: 20px;
   list-style: none;
   font-weight: 500;
   font-size: 14px;
@@ -341,6 +343,7 @@ ul {
   z-index: 1;
 }
 .mobile-overlay__contacts {
+  padding-left: 20px;
   list-style: none;
   margin-top: 5em;
 }
@@ -355,6 +358,7 @@ ul {
   color: var(--main-color);
 }
 .mobile-overlay__social-list {
+  padding-left: 20px;
   font-size: 1em;
   list-style: none;
   display: flex;
@@ -883,8 +887,12 @@ ul {
   text-transform: uppercase;
   color: #ffffff;
 }
+.newsletter__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .newsletter__input {
-  display: block;
   width: 358px;
   margin: 0;
   padding: 13px 16px;
@@ -901,6 +909,35 @@ ul {
   letter-spacing: 0.03em;
 }
 
+@media (min-width: 768px) {
+  .test {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .footer__right-side {
+    margin-left: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer__left-side {
+    margin-right: 70px;
+  }
+  .newsletter__form {
+    display: flex;
+    flex-direction: row;
+  }
+  .newsletter__text {
+    display: flex;
+  }
+  .button__newsletter {
+    margin-top: 0;
+  }
+}
 .modal {
   width: 528px;
   min-height: 581px;

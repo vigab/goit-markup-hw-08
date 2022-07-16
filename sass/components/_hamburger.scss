@@ -6,6 +6,7 @@
     border: 0;
     background-color: transparent;
     cursor: pointer;
+
     &:focus {
         &>.hamburger__container {
             box-shadow: 0 0 2px 2px --main-accent-color;
@@ -64,14 +65,17 @@
     }
     
     &--active {
+
         .hamburger__bars {
             transform: rotate(225deg);
             transition: transform 220ms 120ms ease-in-out;
             z-index: 1;
+
             &::before {
                 top: 0;
                 transition: top 100ms ease-out;
             }
+            
             &::after {
                 bottom: 0;
                 transform: rotate(-90deg);
