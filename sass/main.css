@@ -926,6 +926,10 @@ ul {
   }
   .footer__left-side {
     margin-right: 70px;
+    text-align: left;
+  }
+  .footer__right-side {
+    text-align: left;
   }
   .newsletter__form {
     display: flex;
