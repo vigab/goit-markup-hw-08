@@ -731,6 +731,7 @@ ul {
   }
 }
 .customers {
+  display: flex;
   margin-bottom: -30px;
   max-width: 100%;
   margin: 0 auto;
